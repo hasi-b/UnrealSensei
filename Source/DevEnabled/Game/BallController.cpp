@@ -58,11 +58,14 @@ void ABallController::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 void ABallController::MoveRight(float value)
 {
-
+	const FVector Right = Camera->GetRightVector() * MoveForce * value;
+	Mesh->AddForce(Right);
 }
 
 void ABallController::MoveForward(float value)
 {
+	const FVector Forward = Camera->GetRightVector() * MoveForce * value;
+	Mesh->AddForce(Forward);
 }
 
 void ABallController::Jump()
