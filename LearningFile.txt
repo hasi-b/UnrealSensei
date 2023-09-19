@@ -1,3 +1,0 @@
-1. To snap a gameobject in the gameobject down to it, press END
-
-2.use shift drag to, drag camera on scene view with you while dragging the gameobject
